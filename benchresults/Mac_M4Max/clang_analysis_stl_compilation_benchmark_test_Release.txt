@@ -1,0 +1,175 @@
+Clang Build Analysis for stl_compilation_benchmark_test (Release)
+============================================================
+
+Analyzing build trace from 'results/clang_trace_stl_compilation_benchmark_test_Release_20250904_005252.bin'...
+**** Time summary:
+Compilation (1 times):
+  Parsing (frontend):            8.1 s
+  Codegen & opts (backend):     23.3 s
+
+**** Files that took longest to parse (compiler frontend):
+  8112 ms: build/CMakeFiles/stl_compilation_benchmark_test.dir/benchmark/compilation_benchmark_test.cpp.o
+
+**** Files that took longest to codegen (compiler backend):
+ 23264 ms: build/CMakeFiles/stl_compilation_benchmark_test.dir/benchmark/compilation_benchmark_test.cpp.o
+
+**** Templates that took longest to instantiate:
+   131 ms: force_container_instantiations<TestType63> (1 times, avg 131 ms)
+   108 ms: force_container_instantiations<TestType55> (1 times, avg 108 ms)
+   101 ms: force_container_instantiations<TestType31> (1 times, avg 101 ms)
+    93 ms: force_container_instantiations<TestType97> (1 times, avg 93 ms)
+    76 ms: force_container_instantiations<TestType27> (1 times, avg 76 ms)
+    73 ms: force_container_instantiations<TestType98> (1 times, avg 73 ms)
+    73 ms: force_container_instantiations<TestType80> (1 times, avg 73 ms)
+    72 ms: force_container_instantiations<TestType90> (1 times, avg 72 ms)
+    69 ms: force_container_instantiations<TestType47> (1 times, avg 69 ms)
+    68 ms: force_container_instantiations<TestType72> (1 times, avg 68 ms)
+    67 ms: force_container_instantiations<TestType61> (1 times, avg 67 ms)
+    67 ms: force_container_instantiations<TestType57> (1 times, avg 67 ms)
+    67 ms: force_container_instantiations<TestType60> (1 times, avg 67 ms)
+    66 ms: force_container_instantiations<TestType59> (1 times, avg 66 ms)
+    66 ms: force_container_instantiations<TestType56> (1 times, avg 66 ms)
+    65 ms: force_container_instantiations<TestType58> (1 times, avg 65 ms)
+    65 ms: force_container_instantiations<TestType30> (1 times, avg 65 ms)
+    65 ms: force_container_instantiations<TestType89> (1 times, avg 65 ms)
+    64 ms: force_container_instantiations<TestType78> (1 times, avg 64 ms)
+    63 ms: force_container_instantiations<TestType62> (1 times, avg 63 ms)
+    63 ms: force_container_instantiations<TestType39> (1 times, avg 63 ms)
+    62 ms: force_container_instantiations<TestType29> (1 times, avg 62 ms)
+    62 ms: force_container_instantiations<TestType48> (1 times, avg 62 ms)
+    61 ms: force_container_instantiations<TestType94> (1 times, avg 61 ms)
+    61 ms: force_container_instantiations<TestType100> (1 times, avg 61 ms)
+    61 ms: force_container_instantiations<TestType22> (1 times, avg 61 ms)
+    61 ms: force_container_instantiations<TestType44> (1 times, avg 61 ms)
+    61 ms: force_container_instantiations<TestType96> (1 times, avg 61 ms)
+    61 ms: force_container_instantiations<TestType13> (1 times, avg 61 ms)
+    60 ms: force_container_instantiations<TestType95> (1 times, avg 60 ms)
+
+**** Template sets that took longest to instantiate:
+  5993 ms: force_container_instantiations<$> (100 times, avg 59 ms)
+   740 ms: std::__hash_table<$> (300 times, avg 2 ms)
+   678 ms: std::__hash_table<$>::__emplace_unique_key_args<$> (300 times, avg 2 ms)
+   564 ms: std::__tree<$>::__emplace_unique_key_args<$> (300 times, avg 1 ms)
+   545 ms: std::unordered_map<$> (200 times, avg 2 ms)
+   464 ms: std::deque<$>::push_back (100 times, avg 4 ms)
+   456 ms: std::deque<$>::__add_back_capacity (100 times, avg 4 ms)
+   384 ms: std::map<$> (200 times, avg 1 ms)
+   330 ms: std::__tree<$> (300 times, avg 1 ms)
+   285 ms: std::unordered_set<$>::insert (100 times, avg 2 ms)
+   277 ms: std::unordered_set<$> (100 times, avg 2 ms)
+   258 ms: std::__tree<$>::__construct_node<$> (297 times, avg 0 ms)
+   257 ms: std::vector<$>::push_back (100 times, avg 2 ms)
+   253 ms: std::set<$>::insert (100 times, avg 2 ms)
+   235 ms: std::vector<$>::__push_back_slow_path<$> (100 times, avg 2 ms)
+   221 ms: std::__split_buffer<$>::push_back (100 times, avg 2 ms)
+   216 ms: std::__hash_table<$>::__construct_node_hash<$> (294 times, avg 0 ms)
+   213 ms: std::__hash_table<$>::__insert_unique (100 times, avg 2 ms)
+   205 ms: std::pair<$> (217 times, avg 0 ms)
+   194 ms: std::__hash_table<$>::__hash_table (300 times, avg 0 ms)
+   174 ms: std::unordered_map<$>::unordered_map (200 times, avg 0 ms)
+   159 ms: std::vector<$>::__swap_out_circular_buffer (100 times, avg 1 ms)
+   159 ms: std::forward_as_tuple<$> (101 times, avg 1 ms)
+   150 ms: std::__tree<$>::__insert_unique (100 times, avg 1 ms)
+   148 ms: std::__basic_node_handle<$> (102 times, avg 1 ms)
+   144 ms: std::move<$> (100 times, avg 1 ms)
+   141 ms: std::__move<$> (100 times, avg 1 ms)
+   126 ms: std::map<$>::map (197 times, avg 0 ms)
+   124 ms: std::list<$>::push_back (100 times, avg 1 ms)
+   123 ms: std::__uninitialized_allocator_move_if_noexcept<$> (100 times, avg 1 ms)
+
+**** Functions that took longest to compile:
+    18 ms: void force_container_instantiations<TestType59>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    18 ms: void force_container_instantiations<TestType93>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    18 ms: void force_container_instantiations<TestType71>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    18 ms: void force_container_instantiations<TestType74>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    18 ms: void force_container_instantiations<TestType84>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    18 ms: void force_container_instantiations<TestType70>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    17 ms: void force_container_instantiations<TestType92>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    17 ms: void force_container_instantiations<TestType73>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    17 ms: void force_container_instantiations<TestType94>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    17 ms: void force_container_instantiations<TestType75>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    17 ms: void force_container_instantiations<TestType6>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    17 ms: void force_container_instantiations<TestType100>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    16 ms: void force_container_instantiations<TestType15>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    16 ms: void force_container_instantiations<TestType82>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    16 ms: void force_container_instantiations<TestType83>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    16 ms: void force_container_instantiations<TestType81>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    16 ms: void force_container_instantiations<TestType88>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    16 ms: void force_container_instantiations<TestType66>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    16 ms: void force_container_instantiations<TestType91>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    15 ms: void force_container_instantiations<TestType77>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    15 ms: void force_container_instantiations<TestType89>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    15 ms: void force_container_instantiations<TestType99>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    15 ms: void force_container_instantiations<TestType67>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    15 ms: void force_container_instantiations<TestType90>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    15 ms: void force_container_instantiations<TestType87>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    15 ms: void force_container_instantiations<TestType22>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    15 ms: void force_container_instantiations<TestType65>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    15 ms: void force_container_instantiations<TestType55>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    15 ms: void force_container_instantiations<TestType17>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+    15 ms: void force_container_instantiations<TestType7>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+
+**** Function sets that took longest to compile / optimize:
+  1421 ms: void force_container_instantiations<$>() (100 times, avg 14 ms)
+   504 ms: std::__1::deque<$>::__add_back_capacity() (100 times, avg 5 ms)
+   291 ms: void std::__1::__hash_table<$>::__do_rehash<$>(unsigned long) (300 times, avg 0 ms)
+   218 ms: std::__1::pair<$> std::__1::__hash_table<$>::__emplace_unique_key_ar... (100 times, avg 2 ms)
+    58 ms: std::__1::pair<$> std::__1::__tree<$>::__emplace_unique_key_args<$>(... (54 times, avg 1 ms)
+    17 ms: std::__1::unique_ptr<$> std::__1::__hash_table<$>::__construct_node_... (11 times, avg 1 ms)
+     7 ms: std::__1::reverse_iterator<$> std::__1::__uninitialized_allocator_mo... (4 times, avg 1 ms)
+     7 ms: std::__1::vector<$>::__swap_out_circular_buffer(std::__1::__split_bu... (6 times, avg 1 ms)
+     7 ms: std::__1::unique_ptr<$> std::__1::__tree<$>::__construct_node<$>(std... (6 times, avg 1 ms)
+     5 ms: std::__1::pair<$> std::__1::__hash_table<$>::__emplace_unique_key_ar... (1 times, avg 5 ms)
+     4 ms: std::__1::pair<$> std::__1::__hash_table<$>::__emplace_unique_key_ar... (1 times, avg 4 ms)
+     4 ms: std::__1::pair<$> std::__1::__tree<$>::__emplace_unique_key_args<$>(... (1 times, avg 4 ms)
+     4 ms: std::__1::pair<$> std::__1::__tree<$>::__emplace_unique_key_args<$>(... (1 times, avg 4 ms)
+     3 ms: std::__1::pair<$> std::__1::__tree<$>::__emplace_unique_key_args<$>(... (1 times, avg 3 ms)
+     3 ms: std::__1::deque<$>::~deque[abi:ue170006]() (7 times, avg 0 ms)
+     3 ms: std::__1::pair<$> std::__1::__hash_table<$>::__emplace_unique_key_ar... (1 times, avg 3 ms)
+     3 ms: void std::__1::vector<$>::__push_back_slow_path<$>(TestType59&&) (1 times, avg 3 ms)
+     3 ms: void std::__1::vector<$>::__push_back_slow_path<$>(TestType84&&) (1 times, avg 3 ms)
+     3 ms: void std::__1::vector<$>::__push_back_slow_path<$>(TestType66&&) (1 times, avg 3 ms)
+     3 ms: void std::__1::vector<$>::__push_back_slow_path<$>(TestType80&&) (1 times, avg 3 ms)
+     3 ms: void std::__1::vector<$>::__push_back_slow_path<$>(TestType88&&) (1 times, avg 3 ms)
+     3 ms: void std::__1::vector<$>::__push_back_slow_path<$>(TestType67&&) (1 times, avg 3 ms)
+     3 ms: std::__1::pair<$> std::__1::__hash_table<$>::__emplace_unique_key_ar... (1 times, avg 3 ms)
+     3 ms: std::__1::pair<$> std::__1::__hash_table<$>::__emplace_unique_key_ar... (1 times, avg 3 ms)
+     3 ms: void std::__1::vector<$>::__push_back_slow_path<$>(TestType70&&) (1 times, avg 3 ms)
+     3 ms: void std::__1::vector<$>::__push_back_slow_path<$>(TestType99&&) (1 times, avg 3 ms)
+     3 ms: void std::__1::vector<$>::__push_back_slow_path<$>(TestType94&&) (1 times, avg 3 ms)
+     3 ms: std::__1::pair<$> std::__1::__hash_table<$>::__emplace_unique_key_ar... (1 times, avg 3 ms)
+     2 ms: void std::__1::vector<$>::__push_back_slow_path<$>(TestType89&&) (1 times, avg 2 ms)
+     2 ms: std::__1::pair<$> std::__1::__hash_table<$>::__emplace_unique_key_ar... (1 times, avg 2 ms)
+
+**** Expensive headers:
+138 ms: /Applications/Xcode15.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/vector (included 1 times, avg 138 ms), included via:
+  1x: <direct include>
+
+19 ms: /Applications/Xcode15.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/list (included 1 times, avg 19 ms), included via:
+  1x: <direct include>
+
+9 ms: /Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/test_types_randomized.inc (included 1 times, avg 9 ms), included via:
+  1x: <direct include>
+
+6 ms: /Applications/Xcode15.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/map (included 1 times, avg 6 ms), included via:
+  1x: <direct include>
+
+4 ms: /Applications/Xcode15.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cstdio (included 1 times, avg 4 ms), included via:
+  1x: <direct include>
+
+4 ms: /Applications/Xcode15.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/deque (included 1 times, avg 4 ms), included via:
+  1x: <direct include>
+
+2 ms: /Applications/Xcode15.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cstdlib (included 1 times, avg 2 ms), included via:
+  1x: <direct include>
+
+2 ms: /Applications/Xcode15.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/unordered_set (included 1 times, avg 2 ms), included via:
+  1x: <direct include>
+
+2 ms: /Applications/Xcode15.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/set (included 1 times, avg 2 ms), included via:
+  1x: <direct include>
+
+1 ms: /Applications/Xcode15.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/queue (included 1 times, avg 1 ms), included via:
+  1x: <direct include>
+
+  done in 0.0s.

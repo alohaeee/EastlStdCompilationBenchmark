@@ -1,0 +1,5 @@
+__pycache__/
+venv/
+results/
+multi_results/
+build/

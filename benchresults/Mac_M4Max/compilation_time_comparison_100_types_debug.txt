@@ -1,0 +1,22 @@
+Multi-Run STL vs EASTL Benchmark Results
+==================================================
+
+Number of runs: 5
+Build types: Debug
+
+BUILD TYPE: DEBUG
+=================
+
+COMPILATION BENCHMARK TEST
+--------------------------
+Compilation Time (seconds):
+  STL:   Mean=18.693, Std=0.237, Range=[18.345, 19.011]
+  EASTL: Mean=5.365, Std=0.053, Range=[5.278, 5.411]
+  Ratio: 3.48x (EASTL faster)
+
+Binary Size (KB):
+  STL:   Mean=33755.12, Std=0.00, Range=[33755.12, 33755.12]
+  EASTL: Mean=15427.27, Std=0.00, Range=[15427.27, 15427.27]
+  Ratio: 2.19x (EASTL smaller)
+
+

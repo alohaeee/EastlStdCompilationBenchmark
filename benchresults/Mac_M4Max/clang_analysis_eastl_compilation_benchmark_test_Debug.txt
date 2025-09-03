@@ -1,0 +1,159 @@
+Clang Build Analysis for eastl_compilation_benchmark_test (Debug)
+============================================================
+
+Analyzing build trace from 'results/clang_trace_eastl_compilation_benchmark_test_Debug_20250904_005213.bin'...
+**** Time summary:
+Compilation (2 times):
+  Parsing (frontend):            2.9 s
+  Codegen & opts (backend):      2.5 s
+
+**** Files that took longest to parse (compiler frontend):
+  2883 ms: build/CMakeFiles/eastl_compilation_benchmark_test.dir/benchmark/compilation_benchmark_test.cpp.o
+    17 ms: build/CMakeFiles/eastl_compilation_benchmark_test.dir/eastl_new.cpp.o
+
+**** Files that took longest to codegen (compiler backend):
+  2544 ms: build/CMakeFiles/eastl_compilation_benchmark_test.dir/benchmark/compilation_benchmark_test.cpp.o
+
+**** Templates that took longest to instantiate:
+    29 ms: force_container_instantiations<TestType97> (1 times, avg 29 ms)
+    23 ms: force_container_instantiations<TestType47> (1 times, avg 23 ms)
+    18 ms: force_container_instantiations<TestType75> (1 times, avg 18 ms)
+    18 ms: eastl::pair<const TestType97, void *> (1 times, avg 18 ms)
+    17 ms: force_container_instantiations<TestType36> (1 times, avg 17 ms)
+    16 ms: force_container_instantiations<TestType22> (1 times, avg 16 ms)
+    15 ms: force_container_instantiations<TestType10> (1 times, avg 15 ms)
+    15 ms: force_container_instantiations<TestType32> (1 times, avg 15 ms)
+    14 ms: force_container_instantiations<TestType94> (1 times, avg 14 ms)
+    14 ms: force_container_instantiations<TestType30> (1 times, avg 14 ms)
+    14 ms: force_container_instantiations<TestType64> (1 times, avg 14 ms)
+    14 ms: force_container_instantiations<TestType70> (1 times, avg 14 ms)
+    14 ms: force_container_instantiations<TestType50> (1 times, avg 14 ms)
+    14 ms: force_container_instantiations<TestType28> (1 times, avg 14 ms)
+    14 ms: force_container_instantiations<TestType65> (1 times, avg 14 ms)
+    13 ms: force_container_instantiations<TestType46> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType16> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType54> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType25> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType42> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType33> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType57> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType51> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType21> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType49> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType3> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType38> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType61> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType60> (1 times, avg 13 ms)
+    13 ms: force_container_instantiations<TestType48> (1 times, avg 13 ms)
+
+**** Template sets that took longest to instantiate:
+  1283 ms: force_container_instantiations<$> (100 times, avg 12 ms)
+   147 ms: eastl::rbtree<$>::DoInsertKey (200 times, avg 0 ms)
+    67 ms: eastl::hashtable<$>::insert (100 times, avg 0 ms)
+    60 ms: eastl::hashtable<$>::DoInsertValue<$> (100 times, avg 0 ms)
+    47 ms: eastl::rbtree<$>::insert<$> (86 times, avg 0 ms)
+    38 ms: eastl::hashtable<$>::DoInsertValueExtra<$> (66 times, avg 0 ms)
+    32 ms: eastl::rbtree<$>::emplace<$> (58 times, avg 0 ms)
+    27 ms: eastl::hashtable<$>::DoInsertValueExtraForwarding<$> (48 times, avg 0 ms)
+    26 ms: eastl::pair<$> (6 times, avg 4 ms)
+    22 ms: eastl::rbtree<$>::DoInsertValue (42 times, avg 0 ms)
+    20 ms: eastl::hashtable<$> (5 times, avg 4 ms)
+    19 ms: eastl::vector<$>::push_back (19 times, avg 1 ms)
+    17 ms: eastl::hash_map<$> (5 times, avg 3 ms)
+    13 ms: eastl::vector<$>::DoInsertValueEnd<$> (7 times, avg 1 ms)
+    11 ms: eastl::uninitialized_move<$> (5 times, avg 2 ms)
+    10 ms: eastl::uninitialized_copy<$> (4 times, avg 2 ms)
+     9 ms: eastl::hashtable<$>::DoInsertKey (8 times, avg 1 ms)
+     8 ms: eastl::deque<$>::deque (1 times, avg 8 ms)
+     8 ms: eastl::DequeBase<$>::DequeBase (1 times, avg 8 ms)
+     8 ms: eastl::DequeBase<$>::DoInit (1 times, avg 8 ms)
+     5 ms: eastl::hash_set<$> (2 times, avg 2 ms)
+     4 ms: eastl::map<$> (4 times, avg 1 ms)
+     4 ms: eastl::add_lvalue_reference<$> (2 times, avg 2 ms)
+     4 ms: eastl::is_convertible<$> (1 times, avg 4 ms)
+     3 ms: eastl::hash_map<void *, TestType94>::operator[] (1 times, avg 3 ms)
+     3 ms: eastl::pair<$>::pair<$> (1 times, avg 3 ms)
+     2 ms: eastl::hashtable<$>::hashtable (2 times, avg 1 ms)
+     2 ms: eastl::vector<$> (2 times, avg 1 ms)
+     2 ms: eastl::hash_map<void *, TestType16>::operator[] (1 times, avg 2 ms)
+     2 ms: eastl::hash_map<void *, TestType30>::operator[] (1 times, avg 2 ms)
+
+**** Functions that took longest to compile:
+     2 ms: eastl::rbtree<TestType90, TestType90, eastl::less<TestType90>, eastl... (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType74>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType1>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType37>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType53>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType19>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType75>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType71>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType2>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType38>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType5>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType54>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType9>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType93>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType52>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType4>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType17>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType14>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType85>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType56>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType25>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType20>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType67>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType16>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType95>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType26>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType33>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType77>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType18>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+     1 ms: void force_container_instantiations<TestType10>() (/Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/compilation_benchmark_test.cpp)
+
+**** Function sets that took longest to compile / optimize:
+   146 ms: void force_container_instantiations<$>() (100 times, avg 1 ms)
+     2 ms: eastl::rbtree<$>::DoGetKeyInsertionPositionUniqueKeys(bool&, TestTyp... (1 times, avg 2 ms)
+     1 ms: eastl::rbtree<$>::DoGetKeyInsertionPositionUniqueKeys(bool&, void* c... (1 times, avg 1 ms)
+     1 ms: eastl::pair<$> eastl::hashtable<$>::DoInsertValueExtraForwarding<$>(... (1 times, avg 1 ms)
+     0 ms: eastl::hashtable<$>::DoAllocateNodeFromKey(void* const&) (1 times, avg 0 ms)
+     0 ms: bool eastl::operator!=<TestType66, TestType66*, TestType66&, 4u>(eas... (1 times, avg 0 ms)
+     0 ms: eastl::pair<$> eastl::hashtable<$>::DoInsertValueExtraForwarding<$>(... (1 times, avg 0 ms)
+     0 ms: eastl::move_iterator<$>::move_iterator(TestType62*) (1 times, avg 0 ms)
+     0 ms: eastl::pair<$> eastl::hashtable<$>::DoInsertValueExtraForwarding<$>(... (1 times, avg 0 ms)
+     0 ms: eastl::rbtree_iterator<$>::rbtree_iterator(eastl::rbtree_iterator<$>... (1 times, avg 0 ms)
+     0 ms: eastl::rbtree<$>::DoInsertValueImpl(eastl::rbtree_node_base*, bool, ... (1 times, avg 0 ms)
+
+**** Expensive headers:
+50 ms: /Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/build/_deps/eastl-src/include/EASTL/vector.h (included 1 times, avg 50 ms), included via:
+  1x: <direct include>
+
+17 ms: /Applications/Xcode15.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/new (included 2 times, avg 8 ms), included via:
+  1x: <direct include>
+  1x: vector.h allocator.h 
+
+11 ms: /Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/build/_deps/eastl-src/include/EASTL/map.h (included 1 times, avg 11 ms), included via:
+  1x: <direct include>
+
+10 ms: /Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/benchmark/test_types_randomized.inc (included 1 times, avg 10 ms), included via:
+  1x: <direct include>
+
+9 ms: /Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/build/_deps/eastl-src/include/EASTL/string.h (included 1 times, avg 9 ms), included via:
+  1x: <direct include>
+
+8 ms: /Applications/Xcode15.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cstdlib (included 2 times, avg 4 ms), included via:
+  1x: new 
+  1x: <direct include>
+
+5 ms: /Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/build/_deps/eastl-src/include/EASTL/hash_map.h (included 1 times, avg 5 ms), included via:
+  1x: <direct include>
+
+4 ms: /Applications/Xcode15.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cstdio (included 2 times, avg 2 ms), included via:
+  2x: <direct include>
+
+3 ms: /Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/build/_deps/eastl-src/include/EASTL/deque.h (included 1 times, avg 3 ms), included via:
+  1x: <direct include>
+
+2 ms: /Users/vladislavdubrovskij/Documents/Projects/Personal/eastl_compare/build/_deps/eastl-src/include/EASTL/sort.h (included 1 times, avg 2 ms), included via:
+  1x: <direct include>
+
+  done in 0.0s.
